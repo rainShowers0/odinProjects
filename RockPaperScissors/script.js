@@ -43,21 +43,25 @@ function playRound(playerSelection, computerSelection) {
         computerScore += 1;
         console.log("Scissors lose to rock, you lose")
     }
-  } // I don't know loop yet lolol
-  playRound(playerSelection, computerSelection);
-  playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
-  playRound(playerSelection, computerSelection);
-  playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
-  playRound(playerSelection, computerSelection);
-  playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
-  playRound(playerSelection, computerSelection);
-  playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
-  playRound(playerSelection, computerSelection);
+} 
+function game() {
+      // I don't know loop yet lolol
+    playRound(playerSelection, computerSelection);
+    playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+    playRound(playerSelection, computerSelection);
+    playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+    playRound(playerSelection, computerSelection);
+    playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+    playRound(playerSelection, computerSelection);
+    playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+    playRound(playerSelection, computerSelection);
 // To check who is the final winner by comparing scores
-if (playerScore == computerScore) {
-    console.log("You tied with the computer")
-} else if (computerScore > playerScore) {
-    console.log("The Computer won :( ")
-} else {
-    console.log("You won")
+    if (playerScore == computerScore) {
+        console.log("You tied with the computer")
+    } else if (computerScore > playerScore) {
+        console.log("The Computer won :( ")
+    } else {
+        console.log("You won")
+    }
 }
+game();
