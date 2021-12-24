@@ -1,4 +1,9 @@
 // The "AI" chooses its 
+let playerScore = 0;
+let computerScore = 0;
+let playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+let computerSelection = "rock";
+
 function computerPlay() {
 
 }
@@ -38,8 +43,21 @@ function playRound(playerSelection, computerSelection) {
         computerScore += 1;
         console.log("Scissors lose to rock, you lose")
     }
-  }
-  
-  const playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
-  const computerSelection = computerPlay();
-  console.log(playRound(playerSelection, computerSelection));
+  } // I don't know loop yet lolol
+  playRound(playerSelection, computerSelection);
+  playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+  playRound(playerSelection, computerSelection);
+  playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+  playRound(playerSelection, computerSelection);
+  playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+  playRound(playerSelection, computerSelection);
+  playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
+  playRound(playerSelection, computerSelection);
+// To check who is the final winner by comparing scores
+if (playerScore == computerScore) {
+    console.log("You tied with the computer")
+} else if (computerScore > playerScore) {
+    console.log("The Computer won :( ")
+} else {
+    console.log("You won")
+}
