@@ -1,11 +1,16 @@
 // The "AI" chooses its 
 let playerScore = 0;
 let computerScore = 0;
-let playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
-let computerSelection = "rock";
 
 function computerPlay() {
-
+    let selection = Math.random() * 100;
+    if (selection <= 33) {
+        return "rock"
+    } else if (selection > 33 && 66 >= selection) {
+        return "paper"
+    } else {
+        return "scissors"
+    }
 }
 // Checks who won
 function playRound(playerSelection, computerSelection) {
@@ -46,13 +51,19 @@ function playRound(playerSelection, computerSelection) {
 } 
 function game() {
       // I don't know loop yet lolol
+    let computerSelection = computerPlay();
+    let playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
     playRound(playerSelection, computerSelection);
+    computerSelection = computerPlay();
     playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
     playRound(playerSelection, computerSelection);
+    computerSelection = computerPlay();
     playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
     playRound(playerSelection, computerSelection);
+    computerSelection = computerPlay();
     playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
     playRound(playerSelection, computerSelection);
+    computerSelection = computerPlay();
     playerSelection = prompt("Choose rock, paper or scissors").toLowerCase();
     playRound(playerSelection, computerSelection);
 // To check who is the final winner by comparing scores
