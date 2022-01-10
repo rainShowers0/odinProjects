@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(226, 208, 138);
+}
+.buttons {
+    display:flex;
+    justify-content: center;
+    margin-top: 300px;
+    
+}
+input {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 0 150px 150px 0;
+    color: rgb(143, 92, 26);
+    background-color: rgb(219, 197, 168);
+    border: 4px solid rgb(128, 87, 22);
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+}
+.result {
+    text-align: center;
+    margin-right: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(172, 112, 16);
+}
