@@ -75,8 +75,8 @@ function RGBColor() {
     btnRGB.addEventListener('click', () => {
         boxes.forEach(box => box.addEventListener('mouseover', () => {
             let R = Math.floor(Math.random() * 255)
-            let G = Math.floor(Math.random() * 256)
-            let B = Math.floor(Math.random() * 256)
+            let G = Math.floor(Math.random() * 255)
+            let B = Math.floor(Math.random() * 255)
             box.style.background = `rgb(${R},${G},${B} )`;
         }))
     })
