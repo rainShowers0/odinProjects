@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,6 +20,43 @@
         </div>
     </div>
     <div class="column2">
+        <div class="someText">
+            <p>This is not a real online service! You are one step away from becoming a real barista. Our course will make you job-ready, we supplement about 90% of baristas in the entire city here. Our staff members worked in the industry for at least 10 years and they are ready to prepare the next generation.</p>
+            <p>You know this is the best way.</p>
+        </div>
+        <form action="url" method="post" id="form">
+            <div class="input-container">
+                <h2>Let's do this!</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <label for="first-name">FIRST NAME</label><br>
+                        <input type="text">
+                    </div>
+                    <div class="grid-item">
+                        <label for="first-name">LAST NAME</label><br>
+                        <input type="text">
+                    </div>
+                    <div class="grid-item">
+                        <label for="first-name">EMAIL</label><br>
+                        <input type="email">
+                    </div>
+                    <div class="grid-item">
+                        <label for="first-name">PHONE NUMBER</label><br>
+                        <input type="tel">
+                    </div>
+                    <div class="grid-item" id="passwordContainer">
+                        <label for="first-name">PASSWORD</label><br>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="grid-item">
+                        <label for="first-name">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="confirmPassword">
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+            <p id="login" style='font-size: large; font-weight: 450;'>Already have an account? <a id='loginLink'href="">Log in</a></p>
+        </form>
     </div>
 </body>
 </html>

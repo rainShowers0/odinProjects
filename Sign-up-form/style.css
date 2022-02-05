@@ -13,6 +13,7 @@ body {
 .column1 {
     position: relative;
     width: 37vw;
+    height: 100vh;
     background-image: url('michal-kubalczyk-NPkbdfDKN4A-unsplash.jpg');
     background-position: center;
     background-size: cover;
@@ -23,19 +24,19 @@ body {
     line-height: 0;
     text-align: center;
     margin-top: 15vh;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     width: 100%;
     background-color: rgba(56, 44, 24, 0.37);
     font-size: 3.5rem;
-    font-family: 'Lemon Fresh';
+    font-family: 'Lemon Fresh', 'Times New Roman', Times, serif;
     color:white;
 }
 
 img {
     filter: brightness(0) invert(1);
-    width: 100px;
-    height: 130px;
+    width: 6vw;
+    height: 15vh;
 }
 
 #logoName {
@@ -56,6 +57,70 @@ a {
 }
 
 .column2 {
-    background-color: rgb(200, 166, 122);
+    margin-bottom: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     width: 63vw;
+} 
+
+.someText {
+    font-weight: bold;
+    width: 50vw;
+    font-size: 1.5rem;
+}
+
+form {
+    width: 62.8vw;
+    height: 40vh;
+}
+
+h2 {
+    font-weight: bold;
+    margin-left: 6vw;
+}
+
+.grid-container {
+    margin-left: 6vw;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-column-gap: 250px;
+}
+
+.grid-item {
+    width: 30vw;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+.input-container {
+    box-shadow: 0 5px 5px rgb(167, 164, 164);
+    border: 1px solid rgb(224, 216, 216)
+}
+
+button {
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    width: 13vw;
+    height: 4.5vh;
+    margin-left: 6vw;
+    margin-top: 4vh;
+    background-color: rgb(136, 112, 80);
+    border-radius: 15px;
+    border-color: rgb(136, 112, 80);
+}
+
+#loginLink {
+    text-decoration: none;
+    color: rgb(136, 112, 80);
+}
+#login {
+    margin-left: 6vw;
 }
