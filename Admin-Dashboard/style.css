@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.dashboard-icon {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: start;
+    place-items: center;
+    column-gap: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 1.8rem;
+    
+}
+
+.nav {
+    display: grid;
+    width: 15vw;
+    height: 100vh;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+}
+
+.section1 ul {
+    display: grid;
+}
+
+.section1 ul li a,
+.section2 ul li a {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+.section2 ul {
+    display: grid;
+    gap: 15px;
+}
