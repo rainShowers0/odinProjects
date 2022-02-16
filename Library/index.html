@@ -9,22 +9,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="title">
-        <h1>Library</h1>
-    </div>
-    <div class="form">
-        <form action="" class="form-container">
-            <label for="title">Book title</label>
-            <input type="text" name="title" required>
+    <div class="container">
+        <div class="title">
+            <h1>Library</h1>
+        </div>
+        
+        <div class="form">
+            <form action="" class="form-container">
+                <label for="title">Book title</label>
+                <input type="text" name="title" required>
+                <label for="author">Author</label>
+                <input type="text" name="author" required>
+                <label for="pages">Pages</label>
+                <input type="text" name="pages">
+                <button type="submit">Add Book</button>
+            </form>
 
-            <label for="author">Author</label>
-            <input type="text" name="author" required>
+            <button class="closeForm">Close Form</button>
+            
+            <div class="books">
 
-            <label for="pages">Pages</label>
-            <input type="text" name="pages">
-
-            <button type="submit">Add Book</button>
-        </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
