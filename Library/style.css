@@ -26,3 +26,17 @@ body {
 .form-container input[type='text'] {
     width: max-content;
 }
+
+.book {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+}
