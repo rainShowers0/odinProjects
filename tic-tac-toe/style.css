@@ -1,0 +1,12 @@
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-item {
+    border: 2px solid black;
+}
