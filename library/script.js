@@ -4,13 +4,23 @@ class Book {
         this.author = `Author: ${author}`;
         this.pages = `Number of Pages: ${pages}`;    
     }
-}
-
-function removeChildNodes(parent) {
-    while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
+    removeChildNodes(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild)
+        }
+    }
+    clearInput() {
+        formTitle.value = ''
+        formAuthor.value = ''
+        formPages.value = ''
     }
 }
+
+// function removeChildNodes(parent) {
+//     while (parent.firstChild) {
+//         parent.removeChild(parent.firstChild);
+//     }
+// }
 
 let library = [];
 const books = document.getElementById('books');
@@ -22,10 +32,9 @@ const formPages = document.getElementById('pages');
 
 addBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    removeChildNodes(books);
     let newBook = new Book(formTitle.value, formAuthor.value, formPages.value,);
     library.push(newBook);
-    
+    newBook.removeChildNodes(books);
     library.forEach(book => { 
         if (book === undefined) return;
         const div = document.createElement('div');
@@ -57,7 +66,8 @@ addBtn.addEventListener('click', (e) => {
 
     });
     // To clear the input fields
-    formTitle.value = ''
-    formAuthor.value = ''
-    formPages.value = ''
+    newBook.clearInput()
+    // formTitle.value = ''
+    // formAuthor.value = ''
+    // formPages.value = ''
 })
